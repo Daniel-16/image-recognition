@@ -1,8 +1,9 @@
 import cv2
 
-face_haar_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
+face_haar_cascade = cv2.CascadeClassifier(
+    'haarcascade_frontalface_default.xml')
 
-image = cv2.imread('./images/face3.jpeg')
+image = cv2.imread('./images/face1.jpg')
 
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
